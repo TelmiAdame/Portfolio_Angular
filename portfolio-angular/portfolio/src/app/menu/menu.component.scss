@@ -1,0 +1,35 @@
+
+/* animação e estilo do menu */
+.container-menu{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-ul{
+    list-style: none;
+    position:absolute; /* Absolute p/ que ele fique na frente de qualquer coisa na tela */
+    transition: 0.25s 0.1s cubic-bezier(0, 1.07, 0, 1.02); /*  método utilizado usando o gráfico de de tempo de animação - dúdidas ainda sobre essa ferramenta*/
+    z-index: 3;
+    margin: 0;
+    padding: 0;
+}
+
+.container-menu li{
+    padding: 0.4em;
+}
+
+.container-menu a{
+    text-decoration: none;
+    color: black;
+    //font-family: ;
+    font-size: 3em;
+}
+.container-menu li:hover{
+    background-color: #fff;
+    transition-duration: 1s;
+    border-radius: 5px;
+}

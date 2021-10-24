@@ -1,0 +1,48 @@
+
+footer{
+    background-color: #C2D6E0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3em;
+    padding-left: 3em;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+}
+
+footer p {
+    margin: 0%;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.footer-contact {
+    display: flex;
+    align-items: baseline;
+    padding-right: 1em;
+    cursor: pointer;
+}
+
+.footer-contact img{
+    width: 1.1em;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 850px) {
+    
+    footer p {
+        font-size: 0.85em;
+        margin: 0;
+        padding: 1em;
+    }
+    .footer-contact img{
+        width: 1em;
+    }
+}

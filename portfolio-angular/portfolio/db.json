@@ -1,0 +1,43 @@
+{
+  "trajectorys": [
+    {
+      "id": 1,
+      "visible": false,
+      "year": "",
+      "text": "Olá, me chamo Telmi Adame e em setembro de 2020 comecei a estudar programação para me tornar uma  futura desenvolvedora front-end. Antes e depois disso muitas águas rolaram, para saber um pouco mais da minha trajetória é só clicar em uma das cores a baixo."
+    },
+    {
+      "id": 2,
+      "visible": false,
+      "year": "2021",
+      "text": "Até 2020 meu contato com a tecnológia era constante devido aos projetos arquitetura 3D em que trabalhava, esses laços foram se estreitando quando comecei a trabalhar no PicPay e construí amizades que me apresentaram o mundo da programação. Aos poucos, fui estudando e experimentando novos caminhos, até que me vi apaixonada e objetivada a transacionar de carreira. Hoje faz um ano e alguns meses que me dedico a esses estudos, e desde abril sou mentorada por um anjo chamado Larrissa Hortêncio."
+    },
+    {
+      "id": 3,
+      "visible": false,
+      "year": "2018",
+      "text": "Em 2018 estava decidida a contribuir com os estudos sobre arquitetura e gênero, debate que fui construindo ainda durante a graduação, e para isso, entrei no mestrado de arquitetura pela Universidade Federal da Bahia. O projeto trouxe a luz arquitetas formadas em Salvador e suas devidas contribuições. No mestrado aprendi diversos conteúdos, mas o mais relevante foi aprender à aprender, pesquisar, usar referencias, compilar meus aprendizados e apresenta-los."
+    },
+    {
+      "id": 4,
+      "visible": false,
+      "year": "2011",
+      "text": "Em 2011 entrei na falcudade de arquitetura e urbanismo da Universidade Federal do Espírito Santo, me formando em 2016. Definitivamente foi umas das vivencias mais inriquecedoras que tive, aproveitei todos os conteúdos diciplinares, participei também do movimento estudantil de arquitura durante alguns anos, fiz matérias em outros cursos e escrevi projetos de iniciação científica."
+    },
+    {
+      "id": 5,
+      "visible": false,
+      "year": "1993",
+      "text": "Nasci em São Paulo capital, mas moro no Espírito Santo desde os 8 anos. Comecei estudando em uma escola pública em frente a praia, onde também tinha aula de bodyboard, em um lugarzinho lindo chama Barra do Jucu. Sempre fui muito estudiosa e amante de esportes.Tive uma infância simples, mas me divertia muito."
+    }
+  ],
+
+  "works": [
+    {
+      "url": "https://picsum.photos/id/237/200/300"
+    },
+    {
+      "url": "https://picsum.photos/id/237/200/300"
+    }
+  ]
+}

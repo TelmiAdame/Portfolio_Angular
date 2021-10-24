@@ -1,0 +1,221 @@
+.header-container{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../../assets/image/background-pink.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-head{
+    display: flex;
+}
+
+.logo-portfolio{
+    display: flex;
+    flex: 2;
+    justify-content: center;
+}
+
+.logo-portfolio h3{
+    margin: 0;
+    padding-top: 1em;
+    font-size: 1.6em;
+    font-family: 'Lemon', sans-serif;
+}
+
+/*BANNER*/
+.coitaner-banner{
+    display: flex;
+    padding: 9em 0em 0em 10em;
+    position: relative;
+    z-index: 0;
+}
+
+.banner-content{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.banner-content h1{
+    position: absolute;
+    font-family: 'Lemon';
+    font-weight: lighter;
+    font-size: 20em;
+    color: #fff;
+    text-shadow:rgba(216, 216, 216, 0.26) 0.05em 0.05em 0.1em;
+}
+  
+.banner-content h2{
+    position: relative;
+    z-index: 1;
+    width: 100px;
+    font-size: 2em;
+    padding-top: 2.2em;
+    letter-spacing: 1.5em;
+    padding-left: 2.8em;  
+}
+
+@media screen and (max-width: 850px) {
+
+    .coitaner-banner{
+        padding: 10em 0em 0em 4em;
+    }
+
+    .banner-content h1{
+        font-size: 7.5em;
+        display: flex;
+        margin: 0em;
+    }
+
+    .banner-content h2{
+        font-size: 1em;
+        padding: 1.3em 0em 0em 0em;
+        margin: 0em;
+        letter-spacing: 1.3em;
+    }
+  }
+
+  @media screen and (min-width: 1850px) {
+
+    .coitaner-banner{
+        padding: 10em 0em 0em 12em;
+    }
+
+    .banner-content h1{
+        font-size: 30em;
+        display: flex;
+        margin: 0em;
+    }
+
+    .banner-content h2{
+        font-size: 3em;
+        padding: 1.5em 0em 0em 0.0em;
+        margin: 0em;
+        letter-spacing: 2em;
+    }
+  }
+
+.banner-content:nth-child(2){
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.banner-content-img img{
+    position: absolute;
+    z-index: 2;
+    margin-top: 2.6em;
+    margin-left: 1.8em;
+    width: 18.5em;
+}
+
+.banner-content-img .circul{
+    width: 22em;
+    height: 22em;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+
+}
+
+@media screen and (max-width: 850px) {
+
+    .banner-content-img{
+      display: flex;
+      flex-wrap: wrap;
+      width: 3em;
+      margin: 5em 10em 0em 0em;
+      justify-content: center;
+    }
+
+    .banner-content-img .circul{
+        display: none;
+    }
+  }
+
+  @media screen and (min-width: 1850px) {
+
+    .banner-content:nth-child(2){
+        width: 200%;
+    }
+
+    .banner-content h1 {
+        margin-left: 0em;
+    }
+
+    .banner-content-img{
+        margin: 5em 10em 0em 20em;
+        justify-content: center;
+    }
+        
+  }
+
+  //HAMBURGUER
+
+  .container-burguer{
+    margin: 1em 2em 0em 0em;
+}
+
+.menu-bubble{
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    cursor: pointer;
+    transition: box-shadow 1.1s cubic-bezier(0.19, 1, 0.22, 1); /*  método utilizado usando o gráfico de tempo de animação - dúdidas ainda sobre essa ferramenta */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-bubble:hover {
+    box-shadow: 0 0 0 20px #E1ECE5, 0 0 0 20px #E1ECE5; /* 8px de raio */
+}
+.burguer {
+    position: relative; 
+    display: block;
+    background: #000;
+    border-radius: 30%;
+    width: 2.1em;
+    height: 0.26em;
+    transition: 0.5s ease-in-out;
+}
+
+/* Criando as duas outras linhas do hamburguer */
+.burguer:before,
+.burguer:after {
+    background: #000;
+    content: '';
+    display: block;
+    width: 100%;        /* O width e height precisa ser 100%, porque a refrência é o burguer */
+    height: 100%;
+    position: absolute; /* absolutos em relação ao hamburguer */
+    transition: 0.5s ease-in-out;
+}
+  
+.burguer:before {
+    top: -10px;
+    border-radius: 30%;
+}  
+.burguer:after {
+    bottom: -10px;
+    border-radius: 30%;
+}
+  
+input {
+    display: none;
+}
+input:checked ~ label .burguer {
+    transform: rotate(45deg);
+}
+  
+input:checked ~ label .burguer:before {
+    transform: rotate(90deg);
+    top: 0;
+}
+  
+input:checked ~ label .burguer:after {
+    transform: rotate(90deg);
+    bottom: 0;
+}

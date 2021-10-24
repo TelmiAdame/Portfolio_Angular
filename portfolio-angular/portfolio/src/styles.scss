@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+@font-face {
+    font-family: 'Lemon';
+    src: url('../src/assets/font/lemon-tuesday/Lemon\ Tuesday.otf');
+}
+@font-face {
+    font-family: 'Glacial-Regular';
+    src: url('../src/assets/font/glacial-indifference/GlacialIndifference-Regular.otf');
+}
+
+.body {
+    margin: 0px;
+    padding:0px;
+    font-family: 'Glacial_Regular', serif; 
+    overflow-x: hidden;
+
+}

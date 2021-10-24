@@ -1,0 +1,51 @@
+<section class="content-container">
+    <div id = "work" class="work">            
+        <div>
+            <h2 class="content-title">work</h2>
+        </div> 
+            <div class ="content-icons">
+               <div class= "content-icons-pcAndMobile">
+                <div class = "content-icon-pc">
+                    <img class = "icone-pc" src="../../../../assets/image/icon-pc.png" alt="icone computador">
+                    <div class="circle-pc"></div>
+                </div>
+                <div class = "content-icon-mobile">
+                    <img class = "icone-mobile" src="../../../../assets/image/icon-mobile.png" alt="icone mobile">
+                    <div class="circle-mobile"></div>
+                </div>
+                </div>  
+            </div>
+        
+      
+        <div class = "content-box" >
+            <img class= "img-box-pc" src="../../../../assets/image/print-site-picpay.JPG"  alt="Imagem site PicPay">
+            <div class= "content-img-mobile">
+                <img class= "img-box-mobile" src="../../../../assets/image/print-app-bank01.JPG" alt="Imagem site">
+                <img class= "img-box-mobile" src="../../../../assets/image/print-app-bank01.JPG" alt="Imagem site">
+            </div>
+        </div>
+        <div class = "content-box" id="content-box-mobile">
+            <img class= "img-box-pc" src="../../../../assets/image/print-site-picpay.JPG"  alt="Imagem site PicPay">
+            <div class= "content-img-mobile">
+                <img class= "img-box-mobile" src="../../../../assets/image/print-app-bank01.JPG" alt="Imagem site">
+                <img class= "img-box-mobile" src="../../../../assets/image/print-app-bank01.JPG" alt="Imagem site">
+            </div>
+        </div>
+
+        <div *ngFor="let work of works" >
+            {{ work }}
+        </div>
+      
+        <div class="modal-wrapper" id = "modal-1"> 
+            <div class= "modal">
+                <div class="modal-body" >
+                    <p>modal body text</p>
+                </div> 
+            </div>
+            <div class = "modal-background"></div>
+        </div> 
+    </div>    
+</section>
+
+    
+

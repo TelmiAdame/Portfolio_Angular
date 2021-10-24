@@ -1,0 +1,53 @@
+
+<section class="content-container">
+
+    <div id ="trajectory" class = "trajectory" href = "#trajectory">
+
+        <div>
+            <h2 class="content-title">trajectory</h2>
+        </div>
+
+        <div class="content-boxs">
+            <div>
+            
+                <div  *ngFor="let trajectory of trajectorys" >
+                    <div class="box" id="box_1" *ngIf = "trajectory.id == 1; else boxColor">{{ trajectory.text }}</div>
+                    <ng-template #boxColor >
+                    <div  class="box" id="box_{{trajectory.id}}" (click)="clickbox(trajectory.id)">
+                        <p  *ngIf = "!trajectory.visible ; else updateText" id = ano-box{{trajectory.id}}>{{ trajectory.year }}</p>
+                        <ng-template #updateText>
+                           <p id = "txt-box{{trajectory.id}}">
+                            {{ trajectory.text }}
+                        </p> 
+                        </ng-template>
+                    </div>
+                    </ng-template>
+                </div>
+                
+
+            </div>
+            <div class = "content-sideAnimation">
+                <div class="sideAnimation">
+                    <div class="content-line">
+                        <img src="../../../../assets/image/dashed-line.png" alt="linha tracejada">
+                    </div>
+                    <div class="content-paperPlane">
+                        <img src="../../../../assets/image/paper-plane.png" alt="aviaozinho de papel">
+                    </div>
+                    <div  *ngFor="let trajectory of trajectorys" >
+                        <div class="content-circles" *ngIf = "trajectory.id == 1; else boxColor"></div>
+                        <ng-template #boxColor >
+                        <div  class="" id="circle_{{trajectory.id}}" (click)="clickbox(trajectory.id)">
+                            <p  *ngIf = "!trajectory.visible ; else updateText" id = ano-box{{trajectory.id}}></p>
+                            <ng-template #updateText>
+                               <p id = "txt-box{{trajectory.id}} "></p> 
+                            </ng-template>
+                        </div>
+                        </ng-template>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
