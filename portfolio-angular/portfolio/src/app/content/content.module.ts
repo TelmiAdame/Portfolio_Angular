@@ -15,7 +15,7 @@ import { WorkComponent } from './work/work.component';
     WorkComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
   ],
   exports: [
     ContentComponent,

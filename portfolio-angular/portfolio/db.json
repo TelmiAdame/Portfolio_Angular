@@ -34,10 +34,12 @@
 
   "works": [
     {
-      "url": "https://picsum.photos/id/237/200/300"
+        "id": 1,
+        "url": "/assets/image/print-site-picpay.JPG"
     },
     {
-      "url": "https://picsum.photos/id/237/200/300"
+        "id": 2,
+        "url": "http://lorempixel.com/400/200/sports/"
     }
   ]
 }

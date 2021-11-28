@@ -1,6 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { WorkService } from './work.service'
-
+import { Work } from './work';
 
 @Component({
   selector: 'app-work',
@@ -9,12 +9,24 @@ import { WorkService } from './work.service'
 })
 export class WorkComponent implements OnInit {
 
-  works: string[] = []
+  works: any[] = []
+  work = {} as Work
+  visibleModal:boolean = false
 
-  constructor(private workService: WorkService) {
-    this.works = this.workService.getWorks();
-   }
+  constructor(private workService: WorkService) {}
 
-  ngOnInit(): void {} 
-
+  ngOnInit(): void {
+    this.workService.getWorks().subscribe((works: Work[]) => {
+      this.works = works
+      console.log(works)
+    });
+  }
+  
+  openModal(){
+    this.visibleModal = true
+ }
+  closeModal(){
+    this.visibleModal = false
+  }
+  
 }

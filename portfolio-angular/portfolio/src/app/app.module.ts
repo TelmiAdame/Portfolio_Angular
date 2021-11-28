@@ -13,6 +13,8 @@ import { HomeModule } from './home/home.module';
 import { ContentModule } from './content/content.module';
 import { HttpClientModule } from '@angular/common/http';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +28,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     ContentModule,
     HomeModule,
-    HttpClientModule
+    HttpClientModule,
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

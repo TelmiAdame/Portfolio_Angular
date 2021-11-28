@@ -3,49 +3,52 @@
         <div>
             <h2 class="content-title">work</h2>
         </div> 
-            <div class ="content-icons">
-               <div class= "content-icons-pcAndMobile">
-                <div class = "content-icon-pc">
-                    <img class = "icone-pc" src="../../../../assets/image/icon-pc.png" alt="icone computador">
-                    <div class="circle-pc"></div>
+        <div class = content-fluid>
+            <div id="carouselDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-                <div class = "content-icon-mobile">
-                    <img class = "icone-mobile" src="../../../../assets/image/icon-mobile.png" alt="icone mobile">
-                    <div class="circle-mobile"></div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="assets\image\carrossel-04.png" class="d-block w-100" alt="img-capa">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>>>></h5>
+                      <p>Conheça um pouco do meu trabalho.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="assets\image\projeto-loja.png" class="d-block w-100" alt="img-projeto-loja">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="assets\image\site-empresa.png" class="d-block w-100" alt="img-site-empresa">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets\image\mobile-first.png" class="d-block w-100" alt="img-mobile-first">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
                 </div>
-                </div>  
-            </div>
-        
-      
-        <div class = "content-box" >
-            <img class= "img-box-pc" src="../../../../assets/image/print-site-picpay.JPG"  alt="Imagem site PicPay">
-            <div class= "content-img-mobile">
-                <img class= "img-box-mobile" src="../../../../assets/image/print-app-bank01.JPG" alt="Imagem site">
-                <img class= "img-box-mobile" src="../../../../assets/image/print-app-bank01.JPG" alt="Imagem site">
-            </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </div>
-        <div class = "content-box" id="content-box-mobile">
-            <img class= "img-box-pc" src="../../../../assets/image/print-site-picpay.JPG"  alt="Imagem site PicPay">
-            <div class= "content-img-mobile">
-                <img class= "img-box-mobile" src="../../../../assets/image/print-app-bank01.JPG" alt="Imagem site">
-                <img class= "img-box-mobile" src="../../../../assets/image/print-app-bank01.JPG" alt="Imagem site">
-            </div>
-        </div>
-
-        <div *ngFor="let work of works" >
-            {{ work }}
-        </div>
-      
-        <div class="modal-wrapper" id = "modal-1"> 
-            <div class= "modal">
-                <div class="modal-body" >
-                    <p>modal body text</p>
-                </div> 
-            </div>
-            <div class = "modal-background"></div>
-        </div> 
     </div>    
 </section>
-
-    
-
