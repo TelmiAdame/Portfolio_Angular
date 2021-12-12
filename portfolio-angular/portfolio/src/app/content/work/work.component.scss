@@ -1,16 +1,54 @@
 
 .content-title {
-    padding: 1em 0em 1em 5em;
+    padding: 3em 0em 1em 5em;
     letter-spacing: 0.5em;
     margin:0%;
     display: flex;
     align-items: center;
-    font-size: 2em;
+}
+
+.content-boxs{
+    display: flex;
+    flex-direction: column;
+}
+
+#box_1{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0em 0em 3em 14em;
+    height: 5em;
+    width: 45em;
+    border-radius: 1em;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    color: #1f1f1f;
+    font-size: 1em;
+    font-family: 'Glacial_Regular', serif;
+    cursor: text;
+}
+
+.link-github{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 25em;
+    background-color: #C2D6E0;
+    border-radius: 1em;
+}
+
+.link-github a{
+    font-size: 1.5em;
+    font-family: 'Glacial_Regular', serif;
+    color:#1f1f1f;
+    cursor: pointer;
 }
 
 .content-fluid{
     display: flex;
     justify-content: center;
+    margin: 0em 0em 10em 0em;
 }
 
 .carousel-control-prev-icon{
@@ -20,36 +58,32 @@
 @media screen and (max-width: 850px) {
 
     .content-title{
-        padding: 2em 0em 2em 2em;
-        margin:0%;
-        font-size: 1.5em;
-    }
-
-    .content-icons{
-        display: none;  
-    }
-
-    .content-box{
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        filter: opacity(0.5) blur(1.3px);
-        margin:2em;
+        padding: 2em 0em 1em 0em;
+        margin: 0%;
+        font-size: 1.5em;
+       
     }
 
-    #content-box-mobile{
-        display: none;
-    }
-
-    .img-box-pc {
-        width: 100%;
-    }
-    .img-box-mobile {
+    .content-boxs{
+        justify-content: space-evenly;
         display: flex;
-        width: 40%;
-        margin: 4em 0em 0em 0em;
+        align-items: center;
+        justify-content: center;
         
     }
+
+    #box_1{
+        font-family: 'Glacial_Regular', serif;
+        text-align: justify;
+        height: 4em;
+        font-size: 1.2em;
+        width: 12em;
+        margin: 0em 0em 9em 1em;
+        box-sizing: border-box;
+    }
+    
 }
 
 @media screen and (min-width: 1850px) {
@@ -62,44 +96,5 @@
     .img-box-mobile {
         width: 30%;
     }
-}
-
-
-//MODAL 
-
-.modal-background {
-    position: fixed;
-    top:0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    background-color: #000;
-    opacity: 0.75;
-
-    z-index: 900;
-}
-
-.modal {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    z-index: 1000;
-
-    overflow: auto;
-}
-
-.modal-body {
-    padding: 20px;
-    background: #fff;
-
-    margin: 40px;
-}
-
-section.modal-open {
-    overflow: hidden;
 }
 

@@ -2,7 +2,6 @@
 footer{
     background-color: #C2D6E0;
     display: flex;
-    align-items: center;
     justify-content: space-between;
     padding: 0.3em;
     padding-left: 3em;
@@ -11,27 +10,26 @@ footer{
 footer a{
     text-decoration: none;
     color: black;
-    font-family: sans-serif;
+    display: flex;
+    justify-items: baseline;
 }
 
 footer p {
-    margin: 0%;
-    font-size: 1.2em;
+    font-family: sans-serif;
+    font-size: 1em;
     font-weight: bold;
-    margin-left: 10px;
-    margin-right: 20px;
+    margin: 0px 10px 0px 8px;
 }
 
 .footer-contact {
     display: flex;
-    align-items: baseline;
     padding-right: 1em;
     cursor: pointer;
 }
 
 .footer-contact img{
-    width: 1.1em;
     cursor: pointer;
+    height: 1.1em;
 }
 
 
