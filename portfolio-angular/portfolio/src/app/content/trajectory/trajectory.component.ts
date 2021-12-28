@@ -11,6 +11,7 @@ export class TrajectoryComponent implements OnInit {
  
   trajectory = {} as Trajectory
   trajectorys: Trajectory[] = []
+  
 
   constructor(private service: TrajectoryService) {}
 
@@ -21,16 +22,22 @@ export class TrajectoryComponent implements OnInit {
     });
   }
 
-
   clickbox(id: number): void{
     const text = this.trajectorys.filter(trajectory => trajectory.id == id)
-    if(text[0].visible === false){
-      text[0].visible = true
-      //e text[length].visible = false
-    }else{
-      text[0].visible = false
-    }
-  } 
+    text[0].visible = !text[length].visible 
+  }
+
+  cleartext(): void {
+
+  }
 
 }
 
+/*
+método inicial
+let idActive = text[0]
+    if(text[0].visible === false){
+      text[0].visible = true
+    }else{
+      text[0].visible = false
+    } */
