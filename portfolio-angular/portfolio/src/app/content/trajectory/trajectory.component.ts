@@ -27,10 +27,6 @@ export class TrajectoryComponent implements OnInit {
     text[0].visible = !text[length].visible 
   }
 
-  cleartext(): void {
-
-  }
-
 }
 
 /*
