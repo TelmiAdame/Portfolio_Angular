@@ -1,10 +1,9 @@
 
 .content-title {
-    padding: 3em 0em 1em 5em;
+    padding: 1em 0em 1em 5em;
     letter-spacing: 0.5em;
+    width: min-content;
     margin:0%;
-    display: flex;
-    align-items: center;
 }
 
 .content-boxs{
@@ -13,7 +12,7 @@
 
 .box{
     margin: 0em 0em 1em 14em;
-    height: 7em;
+    height: 5.5em;
     width: 45em;
     border-radius: 1em;
     border: 0.3em solid #fff;
@@ -66,7 +65,7 @@
 .content-line img{
     position: absolute;
     margin-left: 5.5em;
-    margin-top: 5em;
+    margin-top: 4em;
     width: 3.5em;
 }
 
@@ -81,7 +80,7 @@
     width: 1.5em;
     border-radius: 50%;
     border: 3px solid #fff;
-    margin: 3em 0em 3em 6em ;
+    margin: 3em 0em 0em 6em ;
     cursor: pointer;
     position: relative;
 }
@@ -92,7 +91,7 @@
     width: 1.5em;
     border-radius: 50%;
     border: 3px solid #fff;
-    margin: 6em 4.4em 4.4em 5em;
+    margin: 6em 4.4em 0em 5em;
     cursor: pointer;
     position: relative;
 }
@@ -103,7 +102,7 @@
     width: 1.5em;
     border-radius: 50%;
     border: 3px solid #fff;
-    margin: 6em 0em 3em 7em;
+    margin: 3em 0em 0em 6.5em;
     cursor: pointer;
     position: relative;
 }
@@ -113,7 +112,7 @@
     width: 1.5em;
     border-radius: 50%;
     border: 3px solid #fff;
-    margin: 6em 6em 6em 6em;
+    margin: 5em 6em 0em 6.5em;
     cursor: pointer;
     position: relative;
 }
