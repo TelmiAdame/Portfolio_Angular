@@ -42,3 +42,8 @@
 $ git clone https://github.com/TelmiAdame/Portfolio_Angular.git
 ```
  ##
+ 
+### Visual Mobile
+<div align = "center">
+<img src = "https://github.com/TelmiAdame/Portfolio_Angular/blob/main/portfolio-angular/portfolio/src/assets/image/portfoli-mobile.png" width = "850em">
+</div>
