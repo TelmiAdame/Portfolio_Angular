@@ -7,29 +7,24 @@
     height: 100%;
     align-items: center;
     justify-content: center;
+    background-image: linear-gradient(#74ebd5, #acb6e5);
 }
 
 .menu-ul{
     list-style: none;
-    position:absolute; /* Absolute p/ que ele fique na frente de qualquer coisa na tela */
-    transition: 0.25s 0.1s cubic-bezier(0, 1.07, 0, 1.02); /*  método utilizado usando o gráfico de de tempo de animação - dúdidas ainda sobre essa ferramenta*/
-    z-index: 3;
-    margin: 0;
-    padding: 0;
-}
-
-.container-menu li{
-    padding: 0.4em;
 }
 
 .container-menu a{
     text-decoration: none;
     color: black;
-    //font-family: ;
     font-size: 3em;
+    padding: 0.1em;
+    display: flex;
+    justify-content: center;
 }
-.container-menu li:hover{
-    background-color: #fff;
-    transition-duration: 1s;
+.container-menu a:hover{
+    
+    background-color: rgb(255, 255, 255);
+    transition-duration: 0.3s;
     border-radius: 5px;
 }
