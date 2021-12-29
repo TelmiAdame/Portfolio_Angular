@@ -11,16 +11,9 @@
     flex-direction: column;
 }
 
-#box_1{
+#text-box{
+    margin: 0em 0em 1.0em 14em;
     display: flex;
-    flex-wrap: wrap;
-    margin: 0em 0em 3em 14em;
-    height: 5em;
-    width: 45em;
-    border-radius: 1em;
-    align-items: center;
-    justify-content: center;
-    text-align: justify;
     color: #1f1f1f;
     font-size: 1em;
     font-family: 'Glacial_Regular', serif;
@@ -28,31 +21,32 @@
 }
 
 .link-github{
+    height: 4em;
+    width: 50em;
+    border: 1px solid rgb(141, 141, 141);
+    border-radius: 4em;
+    margin: 0em 0em 1.0em 14em;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 3em;
-    width: 25em;
-    background-color: #C2D6E0;
-    border-radius: 1em;
 }
+
 
 .link-github a{
     font-size: 1.5em;
-    font-family: 'Glacial_Regular', serif;
+    font-family: 'Lemon';
     color:#1f1f1f;
-    cursor: pointer;
+    text-decoration: none;
+    
 }
+
 
 .content-fluid{
     display: flex;
     justify-content: center;
-    margin: 0em 0em 10em 0em;
+    margin: 1em 0em 0em 0em;
 }
 
-.carousel-control-prev-icon{
-    color: #000;
-}
 
 @media screen and (max-width: 850px) {
 
