@@ -67,7 +67,7 @@
         
     }
 
-    #box_1{
+    #text-box{
         font-family: 'Glacial_Regular', serif;
         text-align: justify;
         height: 4em;
@@ -75,6 +75,12 @@
         width: 12em;
         margin: 0em 0em 9em 1em;
         box-sizing: border-box;
+    }
+
+    .link-github{
+        height: 4em;
+        width: 10em;
+        margin:0em;
     }
     
 }

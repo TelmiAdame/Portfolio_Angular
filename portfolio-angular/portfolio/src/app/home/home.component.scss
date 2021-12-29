@@ -1,6 +1,5 @@
 .header-container{
     height: 100vh;
-    width: 100vw;
     background-image: url('../../assets/image/background-pink.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -43,7 +42,7 @@
     font-family: 'Lemon';
     font-weight: lighter;
     font-size: 20em;
-    color: #fff;
+    color: azure;
     text-shadow:rgba(216, 216, 216, 0.26) 0.05em 0.05em 0.1em;
 }
   
@@ -114,7 +113,7 @@
 .banner-content-img .circul{
     width: 22em;
     height: 22em;
-    background-color: #fff;
+    background-color: azure;
     border-radius: 50%;
     position: relative;
     z-index: 1;
